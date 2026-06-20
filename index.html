@@ -3,340 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Style Guide — Phumnawat Phosawatmanee</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap">
+    <title>Phumnawat Phosawatmanee — Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+
 </head>
 <body>
 
-    <h1>Style Guide</h1>
-    <p class="intro-desc">Portfolio of Phumnawat Phosawatmanee — visual and code reference for all components.</p>
-
-    <p class="jump-links">
-        Go to:
-        <a href="#interactive">Interactive Elements</a>,
-        <a href="#text">Text Elements</a>,
-        <a href="#combined">Combined Elements</a>,
-        <a href="#project">Project Container</a>,
-        <a href="citations.html">Citations</a>
-    </p>
-
-    <!--  INTERACTIVE ELEMENTS -->
-    <section id="interactive">
-        <h2>Interactive Elements</h2>
-    </section>
-
-    <!-- Primary Button --> 
-    <!-- Source - https://www.youtube.com/watch?v=PTVXnOrQoBQ --> 
-     <!-- Hover effects--> 
-    <section>
-        <h2>Primary Button</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.button-primary</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;a href="projects.html" class="button-primary"&gt;View Projects&lt;/a&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <a href="#" class="button-primary">View Projects</a>
-    </section>
-
-    <!-- Outline Button -->
-    <!-- Source - https://www.youtube.com/watch?v=PTVXnOrQoBQ --> 
-    <!-- Hover effects - change color--> 
-    <section>
-        <h2>Outline Button</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.button-outline</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;a href="contact.html" class="button-outline"&gt;Get In Touch&lt;/a&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <a href="#" class="button-outline">Get In Touch</a>
-    </section>
-
-    <!-- Navigation -->
-    <section>
-        <h2>Navigation Bar</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.demo-nav, .demo-logo, .demo-nav-links a</p>
-
-        <p class="sg-label">Sample code:</p>/*&lt =<, &gt=> - to avoid brower misunderstanding code*/
-        <code>&lt;nav class="demo-nav"&gt;  /*https://stackoverflow.com/questions/5068951/what-do-lt-and-gt-stand-for*/
-            &lt;a href="index.html" class="demo-logo"&gt;Phumnawat&lt;/a&gt;
-            &lt;ul class="demo-nav-links"&gt;
-            &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="projects.html"&gt;Projects&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;/nav&gt;</code>
-
-        <p class="sg-label">Rendered element:</p> /*Nav top bar + CSS - https://www.youtube.com/watch?v=f3uCSh6LIY0 */
-        <nav class="demo-nav">
-            <a href="#" class="demo-logo">Phumnawat</a>
-            <ul class="demo-nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+    <!--  Navbar  --> https://www.youtube.com/watch?v=DiSvq5SgLMI
+    <header class="header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo">Phumnawat Phosawatmanee</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li> <!--  Source - https://www.youtube.com/watch?v=DiSvq5SgLMI  -->
+                <li><a href="projects.html">Projects</a></li> <!-- Link to other different page  -->
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
-    <!-- In-text link -->
-    <section>
-        <h2>In-text Link</h2>
+    <!--  Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
 
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.demo-link</p>
+                <div class="hero-text">
+                    <!-- Animated dot eyebrow badge -->
+                    <div class="hero-eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Open to Opportunities
+                    </div>
 
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;a href="contact.html" class="demo-link"&gt;Get in touch&lt;/a&gt;</code>
+                    <h1>Hello, I'm <span>Phumnawat</span></h1>
+                    <p class="hero-subtitle">3D Modeler · Animator · Front-End Developer</p>
+                    <p>I create immersive digital experiences through 3D modeling, animation, and interactive web development. Currently studying Interactive Arts &amp; Technology at SFU.</p>
 
-        <p class="sg-label">Rendered element:</p>
-        <a href="#" class="demo-link">Get in touch</a>
-    </section>
+                    <div class="hero-actions">
+                        <a href="projects.html" class="btn">View Projects</a>
+                        <a href="contact.html" class="btn-outline">Get In Touch</a>
+                    </div>
+                </div>
 
-    <!-- Badge / Tag -->
-    <section>
-        <h2>Badge / Tag</h2>
+                <!-- Photo with colour-cycling spinning ring -->
+                <div class="hero-photo-wrap">
+                    <div class="hero-photo-frame">
+                        <img src="IMG/My Photo.jpg" alt="Phumnawat Phosawatmanee"> <!-- Put image in website, if image not show up text "Phumnawat Phosawatmanee" will show instead  -->
+                    </div>
+                </div>
 
-        <p class="sg-label">CSS selectors:</p>
-        <p class="sg-value">.badge-amber &nbsp;&nbsp; .badge-teal</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;span class="badge-amber"&gt;3D Animation&lt;/span&gt;
-&lt;span class="badge-teal"&gt;Spatial Design&lt;/span&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <span class="badge-amber">3D Animation</span>
-        &nbsp;
-        <span class="badge-teal">Spatial Design</span>
-    </section>
-
-
-    <!-- TEXT ELEMENTS -->
-    <section id="text">
-        <h2>Text Elements</h2>
-    </section>
-
-    <!-- Headings -->
-    <section>
-        <h2>Headings</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">h1, h2, h3 — font-family: 'Syne', sans-serif</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;h1&gt;Hello, I'm Phumnawat&lt;/h1&gt;
-              &lt;h2&gt;Featured Projects&lt;/h2&gt;
-              &lt;h3&gt;Animated Fish&lt;/h3&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <div style="display:flex; flex-direction:column; gap:10px;">
-            <h1 class="demo-h1">Hello, I'm Phumnawat</h1>
-            <h2 class="demo-h2">Featured Projects</h2>
-            <h3 class="demo-h3">Animated Fish</h3>
-        </div>
-    </section>
-
-    <!-- Step label -->
-    <section>
-        <h2>Step Label (Eyebrow Text)</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.panel-step-label</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;span class="panel-step-label"&gt;Step 01 — How I Started&lt;/span&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <span class="demo-label">Step 01 — How I Started</span>
-    </section>
-
-    <!-- Paragraph -->
-    <section>
-        <h2>Paragraph</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">p — font-family: 'Inter', sans-serif; color: #e2e8f0</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;p&gt;I create immersive digital experiences through 3D modeling,
-                    animation, and interactive web development.&lt;/p&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <p class="demo-p">I create immersive digital experiences through 3D modeling, animation, and interactive web development. Currently studying Interactive Arts &amp; Technology at SFU.</p>
-    </section>
-
-    <!-- Bulleted list -->
-    <section>
-        <h2>Bulleted List</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.demo-ul li — custom arrow bullet using ::before</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;ul class="demo-ul"&gt;
-              &lt;li&gt;Studied fish anatomy and swimming mechanics&lt;/li&gt;
-              &lt;li&gt;Sketched movement cycles frame-by-frame&lt;/li&gt;
-              &lt;li&gt;Chose a tropical reef fish for expressive fins&lt;/li&gt;
-              &lt;/ul&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <ul class="demo-ul">
-            <li>Studied fish anatomy and swimming mechanics</li>
-            <li>Sketched movement cycles frame-by-frame</li>
-            <li>Chose a tropical reef fish for expressive fins</li>
-        </ul>
-    </section>
-
-    <!-- Colour palette -->
-    <section>
-        <h2>Colour Palette</h2>
-/*Source for color palette - https://www.youtube.com/watch?v=iJUy_a3Xjmc*/
-        <p class="sg-label">CSS variables:</p>
-        <code>--bg: #0e1117
---card: #1a2030
---accent: #f0a500  (amber)
---accent2: #2dd4bf (teal)
---text: #e2e8f0
---muted: #7d8ea8</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <div class="color-row">
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#0e1117;"></div>
-                <p>#0e1117</p>
-                <p>Background</p>
-            </div>
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#1a2030;"></div>
-                <p>#1a2030</p>
-                <p>Card</p>
-            </div>
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#f0a500;"></div>
-                <p>#f0a500</p>
-                <p>Amber</p>
-            </div>
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#2dd4bf;"></div>
-                <p>#2dd4bf</p>
-                <p>Teal</p>
-            </div>
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#e2e8f0; border:1px solid #ccc;"></div>
-                <p>#e2e8f0</p>
-                <p>Text</p>
-            </div>
-            <div class="color-chip">
-                <div class="color-chip-block" style="background:#7d8ea8;"></div>
-                <p>#7d8ea8</p>
-                <p>Muted</p>
             </div>
         </div>
     </section>
 
+    <!--  About Me Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
 
-    <!-- COMBINED ELEMENTS-->
-    <section id="combined">
-        <h2>Combined Elements</h2>
-    </section>
+                <!-- Left: text + button -->
+                <div class="about-text reveal">
+                    <h2>About Me</h2>
+                    <p>I'm an SFU student in the <span class="about-highlight">School of Interactive Arts &amp; Technology</span>, where I blend technical craftsmanship with creative problem-solving. My work lives at the intersection of 3D space and the web.</p>
+                    <p>I use tools like <span class="about-highlight">Rhino 8, Maya, and Onshape</span> to design and animate detailed 3D models, and I bring those ideas onto the screen with HTML, CSS, and JavaScript.</p>
+                    <p>I'm drawn to projects that ask both <em>how does this work</em> and <em>how does this feel</em> — from a precisely jointed pavilion structure to a smoothly looping underwater animation.</p>
+                    <a href="projects.html" class="btn" style="margin-top: 14px;">See My Work</a>
+                </div>
 
-    <!-- Skill card -->
-    <section>
-        <h2>Skill Card</h2>
+                <!-- Right: 3 identity cards -->
+                <div class="identity-cards reveal reveal-delay-1">
 
-        <p class="sg-label">CSS selector:</p> /*Make cards for image and context under - https://www.youtube.com/watch?v=9FNNkzPBFcE*/
-        <p class="sg-value">.demo-card</p>
+<!-- Card 1: SFU -->
+    <div class="card">
+      <div class="logo-container bg-red-700">
+        <img src="IMG/SFU.png" alt="SFU Logo">
+      </div>
+      <div class="p-6 text-white">
+        <h3 class="text-2xl font-bold tracking-tight">SFU</h3>
+        <p class="text-zinc-400 mt-1">Simon Fraser University, Burnaby BC</p>
+      </div>
+    </div>
 
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;div class="demo-card"&gt;
-              &lt;div class="demo-card-icon"&gt;🎬&lt;/div&gt;
-              &lt;h3&gt;Animation&lt;/h3&gt;
-              &lt;p&gt;Maya — rigging, keyframing &amp; timing&lt;/p&gt;
-              &lt;/div&gt;</code>
+    <!-- Card 2: SIAT -->
+    <div class="card ">
+      <div class="logo-container bg-white">
+        <img src="IMG/SIAT.png" alt="SIAT Logo">
+      </div>
+      <div class="p-6 text-white">
+        <h3 class="text-2xl font-bold tracking-tight">SIAT</h3>
+        <p class="text-zinc-400 mt-1">Interactive Arts & Technology</p>
+      </div>
+    </div>
 
-        <p class="sg-label">Rendered element:</p>
-        <div class="demo-card">
-            <div class="demo-card-icon">🎬</div>
-            <h3>Animation</h3>
-            <p>Maya — rigging, keyframing &amp; timing</p>
-        </div>
-    </section>
+    <!-- Card 3: 3D Designer -->
+    <div class="card ">
+      <div class="logo-container bg-sky-500">
+        <img src="IMG/MAYA.png" alt="3D Tools Logo">
+      </div>
+      <div class="p-6 text-white">
+        <h3 class="text-2xl font-bold tracking-tight">3D Designer</h3>
+        <p class="text-zinc-400 mt-1">Maya, Rhino 8, Onshape, Blender</p>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <section>
-        <h2>Footer</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.demo-footer, .demo-footer-links a</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;footer class="demo-footer"&gt;
-              &lt;p&gt;© 2026 Phumnawat Phosawatmanee&lt;/p&gt;
-              &lt;div class="demo-footer-links"&gt;
-              &lt;a href="style-guide.html"&gt;Style Guide&lt;/a&gt;
-              &lt;a href="citations.html"&gt;Citations&lt;/a&gt;
-              &lt;a href="https://github.com/Midas0901"&gt;GitHub&lt;/a&gt; /*My github*/
-              &lt;/div&gt;
-              &lt;/footer&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <footer class="demo-footer">
-            <p>© 2026 Phumnawat Phosawatmanee. All rights reserved.</p>
-            <div class="demo-footer-links">
-                <a href="#">Style Guide</a>
-                <a href="#">Citations</a>
-                <a href="#">GitHub Repository</a>
-            </div>
-        </footer>
-    </section>
-
-
-    <!-- PROJECT CONTAINER -->
-    <section id="project">
-        <h2>Project Container</h2>
-    </section>
-
-    <section>
-        <h2>Alternating Panel (Project Page)</h2>
-
-        <p class="sg-label">CSS selector:</p>
-        <p class="sg-value">.panel, .panel-img, .panel-text, .panel-step-label</p>
-
-        <p class="sg-label">Sample code:</p>
-        <code>&lt;div class="panel"&gt;
-              &lt;div class="panel-img"&gt;
-              &lt;img src="IMG/StoryBoard.png" alt="Concept sketches"&gt;
-              &lt;/div&gt;
-              &lt;div class="panel-text"&gt;
-              &lt;span class="panel-step-label"&gt;Step 01 — How I Started&lt;/span&gt;
-              &lt;h3&gt;Research &amp; Concept&lt;/h3&gt;
-              &lt;p&gt;We began by designing the main characters...&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;/div&gt;</code>
-
-        <p class="sg-label">Rendered element:</p>
-        <div class="demo-project-container">
-            <span class="demo-project-tag">3D Animation · Maya · 2025</span>
-            <h3 class="demo-project-title">Animated Fish</h3>
-
-            <div class="demo-panel">
-                <div class="demo-panel-img">Image</div>
-                <div class="demo-panel-text">
-                    <span class="demo-label">Step 01 — How I Started</span>
-                    <h3>Research &amp; Concept</h3>
-                    <p>We began by designing the main characters and building a storyboard to plan each scene before animating.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!--  Skills  -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title reveal">Skills</h2>
+
+            <div class="skills-grid">
+ <!-- https://emojidb.org/3d-modeling-emojis - I get emojis from this website-->
+                <div class="skill-card reveal reveal-delay-1">
+                    <span class="skill-icon">👨‍💻</span> <!-- Use span to seperate icon from text from .css code -->
+                    <h3>3D Modeling</h3>  <!-- https://www.youtube.com/watch?v=WbnCll6vvw4-->
+                    <p>Rhino 8 and Onshape for parametric and organic form. Designing everything from architectural structures to detailed object meshes.</p>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-2">
+                    <span class="skill-icon">🏛️</span>
+                    <h3>Spatial Design</h3>
+                    <p>Designing functional spaces with careful attention to lighting, airflow, privacy, and structural integrity from concept to physical prototype.</p>
+                </div>
+
+                <div class="skill-card reveal reveal-delay-3">
+                    <span class="skill-icon">🎬</span>
+                    <h3>Animation</h3>
+                    <p>Autodesk Maya for character rigging, keyframe animation, timing, and secondary motion. Building smooth, realistic loops for web and multimedia.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Education  -->
+    <section class="education-section">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+
+            <div class="edu-list">
+
+                <!-- Oldest first: FIC -->
+                <div class="edu-item reveal reveal-delay-1">
+                    <div class="edu-content">
+                        <p class="edu-year">2022 – 2023</p>
+                        <h3 class="edu-school">Fraser International College (FIC)</h3>
+                        <p class="edu-location">Burnaby, British Columbia, Canada</p>
+                        <p class="edu-dates">September 2022 – August 2023</p>
+                        <p class="edu-degree">University Transfer Program (UTP) Stage II – Arts and Social Sciences</p>
+                    </div>
+                </div>
+
+                <!-- Newest: SFU -->
+                <div class="edu-item reveal reveal-delay-2">
+                    <div class="edu-content">
+                        <p class="edu-year">2023 – 2026</p>
+                        <h3 class="edu-school">Simon Fraser University (SFU)</h3>
+                        <p class="edu-location">Burnaby, British Columbia, Canada</p>
+                        <p class="edu-dates">September 2023 – Present</p>
+                        <p class="edu-degree">Bachelor of Arts – Interactive Arts and Technology (SIAT)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--  Footer  -->
+    <!--  Source - https://www.youtube.com/watch?v=JNFdCgmMkPk&t=237s - make footer bar and put links and icons -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Phumnawat Phosawatmanee. All rights reserved.</p>
+            <nav class="footer-links">
+                <a href="https://midas0901.github.io/STYLEGUIDE/">Style Guide</a>
+                <a href="https://midas0901.github.io/STYLEGUIDE/citations.html">Citations</a>
+                <a href="https://github.com/Midas0901/Phumnawat-s-portfolio" target="_blank">GitHub Repository</a>
+            </nav>
+            <div class="footer-social"> <!--Source - https://www.youtube.com/watch?v=UQKWc2r_41U : Social Icon -->
+                <a href="https://github.com/Midas0901" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/phumnawat-phosawatmanee-a0a76626a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:poom_phubadin@hotmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+<!--Source - https://www.youtube.com/watch?v=T33NN_pPeNI Making elements on a webpage appear gradually. --> 
+    <script>
+        // Scroll-reveal 
+        
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.2 }); 
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+   <!--threshold: 0.2 = If the object protrudes above the bottom edge of the screen by at least 20% of its size.--> 
 </body>
 </html>
