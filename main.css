@@ -1,0 +1,449 @@
+/* main.css — Style Guide page only */
+/* Source - https://www.w3schools.com/cssref/index.php*/
+body {
+    font-family: 'Inter', sans-serif; /*font style*/
+    background: #ffffff;
+    color: #181717; /*font color*/
+    padding: 2rem 3rem;
+    max-width: 960px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2rem; /*font size only for h1 text class*/
+    margin-bottom: 0.3rem;
+}
+
+.intro-desc {
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+
+.jump-links {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.jump-links a {
+    color: #0066cc;
+}
+
+/* Section dividers */
+section {
+    border-top: 1px solid #ccc;
+    padding: 1.5rem 0;
+    margin: 0;
+}
+
+section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Label rows */
+.sg-label {
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem; /*space between each text*/
+}
+
+.sg-value {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+/* Code block */
+code {
+    display: inline-block;
+    background: #eeeeee;
+    padding: 0.4em 0.75em;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    border-radius: 3px;
+    white-space: pre;
+}
+
+/*ACTUAL SITE COMPONENTS */
+
+/*  Colours  */
+.color-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.color-chip {
+    text-align: center;
+}
+
+.color-chip-block {
+    width: 80px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.color-chip p {
+    font-size: 0.75rem;
+    color: #555;
+    margin: 0;
+}
+
+/* --- Navigation bar --- */
+.demo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: #0e1117;
+    border-radius: 8px;
+}
+
+.demo-logo {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f0a500;
+    text-decoration: none; /*delete underline for link text*/
+}
+
+.demo-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.demo-nav-links a {
+    color: #7d8ea8;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.25s;
+}
+
+.demo-nav-links a:hover {
+    color: #ffffff;
+}
+
+/* --- Headings --- */
+.demo-h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #ffffff;
+    background: #0e1117;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.demo-h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #0e1117;
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.demo-h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #0e1117;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+/* --- Paragraph --- */
+.demo-p {
+    color: #e2e8f0;
+    font-size: 1rem;
+    line-height: 1.75;/*Set the line height.*/
+    background: #0e1117;
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin: 0;
+    max-width: 560px;
+}
+
+/* --- Step label (eyebrow text) --- */
+.demo-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase; /*Convert all English letters to uppercase.*/
+    color: #2dd4bf;
+}
+
+/* --- Primary button --- */
+.button-primary {
+    display: inline-block;
+    padding: 14px 36px;
+    background: #f0a500;
+    color: #0e1117;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.button-primary:hover {
+    background: #ffbb33;
+    transform: translateY(-3px);
+}
+
+/* --- Outline button --- */
+.button-outline {
+    display: inline-block;
+    padding: 12px 32px;
+    background: transparent;
+    color: #2dd4bf;
+    border: 2px solid #2dd4bf;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button-outline:hover {
+    background: #2dd4bf;
+    color: #0e1117;
+}
+
+/* --- In-text link --- */
+.demo-link {
+    color: #2dd4bf;
+    text-decoration: underline;
+    font-size: 1rem;
+}
+
+/* --- Skill card --- */
+.demo-card {
+    background: #1a2030;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 28px 24px;
+    max-width: 220px; /*card maximum width 220px can't be more than 220*/
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.demo-card:hover {
+    border-color: rgba(240,165,0,0.3);
+    transform: translateY(-4px); /*moving hovering*/
+}
+
+.demo-card-icon {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.demo-card h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.demo-card p {
+    font-size: 0.85rem;
+    color: #7d8ea8;
+    margin: 0;
+}
+
+/* --- Badge / tag --- */
+.badge-amber {
+    display: inline-block;
+    padding: 4px 14px;
+    background: rgba(240,165,0,0.12);
+    color: #f0a500;
+    border: 1px solid rgba(240,165,0,0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.badge-teal {
+    display: inline-block;
+    padding: 4px 14px;
+    background: rgba(45,212,191,0.10);
+    color: #2dd4bf;
+    border: 1px solid rgba(45,212,191,0.25);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* --- Bulleted list --- */
+.demo-ul {
+    list-style: none;
+    padding: 0;
+    background: #0e1117;
+    padding: 14px 20px;
+    border-radius: 6px;
+    margin: 0;
+}
+
+.demo-ul li {
+    color: #7d8ea8;
+    font-size: 0.92rem;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.demo-ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #2dd4bf;
+}
+
+/* --- Footer --- */
+.demo-footer {
+    background: #090c11;
+    padding: 30px 20px;
+    border-top: 1px solid rgba(255,255,255,0.07);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.demo-footer p {
+    color: #7d8ea8;
+    font-size: 0.88rem;
+    margin-bottom: 10px;
+}
+
+.demo-footer-links {
+    display: flex; /*change to horizontal elements */
+    justify-content: center; /*center content*/
+    gap: 24px;
+    flex-wrap: wrap; /*New line, automatic truncation.*/
+}
+
+.demo-footer-links a {
+    color: #7d8ea8;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.demo-footer-links a:hover {
+    color: #f0a500;
+}
+
+/* PROJECT CONTAINER */
+
+.demo-project-container {
+    background: #0e1117;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.demo-project-tag {
+    display: inline-block;
+    background: rgba(240,165,0,0.12);
+    color: #f0a500;
+    border: 1px solid rgba(240,165,0,0.25);
+    padding: 4px 14px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.demo-project-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.demo-panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.07);
+    background: #1a2030;
+}
+
+.demo-panel-img {
+    background: linear-gradient(135deg, #1a2030 0%, #0e1117 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    font-size: 2rem;
+    color: #7d8ea8;
+}
+
+.demo-panel-text {
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.demo-panel-text .demo-label {
+    margin-bottom: 2px;
+}
+
+.demo-panel-text h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+.demo-panel-text p {
+    font-size: 0.85rem;
+    color: #7d8ea8;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) { /*responsive max600px if less than that reduce to 1 column*/
+    .demo-panel {
+        grid-template-columns: 1fr;
+    }
+}
+        /* Page-specific additions */
+        .cite-item {
+            margin-bottom: 1.2rem;
+        }
+
+        .cite-item .sg-label {
+            margin-top: 0;
+        }
+
+        .cite-link {
+            color: #0066cc;
+            word-break: break-all;
+        }
+
+        .cite-note {
+            color: #555;
+            font-size: 0.92rem;
+            margin-top: 0.2rem;
+        }
